@@ -1,5 +1,6 @@
 import React from "react"
 import Nav from "../Nav";
+import NavLog from "../NavLog";
 import Footer from "../Footer";
 import Header from "../Header";
 
@@ -11,20 +12,11 @@ function CreateNew(){
 
             <Header/>
 
-            <div className="login">
-                <form action="index.html">
-                    
-                    <label htmlFor="email">E-mail: </label>
-                    <input type="text" id="Email" name="email"/>
-
-                    <input type="submit" value="Login"/>
-
-                </form>
-            </div>
+            <NavLog/>
 
             <Nav/>
 
-
+            
             <article>
                 <section className="text-center form">
                     <h1>Create New Event</h1>

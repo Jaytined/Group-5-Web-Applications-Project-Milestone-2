@@ -1,5 +1,6 @@
 import React from "react"
 import Nav from "../Nav";
+import NavLog from "../NavLog";
 import Footer from "../Footer";
 import Header from "../Header";
 
@@ -10,19 +11,9 @@ function List(){
 
 	<div>
 
-	<Header/>
+	    <Header/>
 
-        <div className="login">
-            <form action="index.html">
-                
-                <label htmlFor="email">E-mail: </label>
-                <input type="text" id="Email" name="email"></input>
-
-                <input type="submit" value="Login"></input>
-
-            </form>
-        </div>
-
+        <NavLog/>
 
         <Nav/>
 

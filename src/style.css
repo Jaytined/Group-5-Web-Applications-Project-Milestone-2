@@ -24,11 +24,6 @@ img.image{
     height: 100px;
 }
 
-div.login{
-    text-align: right;
-    padding-right: 50px;
-}
-
 @keyframes color-change {
     0% {background-color: #fef9e7;}
     25% {background-color: #DAF7A6;}
@@ -40,13 +35,13 @@ div.login{
 nav.heading{
     padding-bottom: 15px;
 }
-nav.heading:hover > ul{
+nav.heading:hover > ul.main{
     animation: 0;
 }
 nav.heading ul:hover{
     background-color: #FFC300;
 }
-nav.heading ul{
+nav.heading ul.main{
     text-align: center;
     list-style-type: none;
     display: inline-flex;
@@ -58,12 +53,28 @@ nav.heading ul{
     font-size: 18px;
 
     position: relative;
-    left: 15px;
+    left: 115px;
 
     top: 50px;
     animation-name: color-change;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+
+    
+}
+nav.heading ul.log{
+    float: right;
+    text-align: center;
+    padding-right: 35px;
+    list-style-type: none;
+    /* display: inline-flex; */
+    margin: 1px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    color: black;
+    font-size: 18px;
+
 }
 a{
     color: black;
@@ -197,4 +208,8 @@ section.viewDetail{
 
 span {
     font-weight: bold;
+}
+
+section.LogSign{
+    padding-top: 80px;
 }

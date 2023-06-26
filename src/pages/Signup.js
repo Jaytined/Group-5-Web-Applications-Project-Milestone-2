@@ -3,7 +3,9 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import {  createUserWithEmailAndPassword  } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
 import Nav from "../Nav";
+import NavLog from "../NavLog";
 import Footer from "../Footer";
+import Header from "../Header";
 
  
 const Signup = () => {
@@ -35,14 +37,16 @@ const Signup = () => {
  
   return (
     <main >    
-        <Nav/>    
-        <section>
+        <Header/>
+        <NavLog/>   
+        <Nav/>      
+        <section class = "LogSign">
             <div>
                 <div>                                                                                            
                     <form>                                                                                            
                         <div>
                             <label htmlFor="email-address">
-                                Email address
+                                Email address: 
                             </label>
                             <input
                                 type="email"
@@ -56,7 +60,7 @@ const Signup = () => {
 
                         <div>
                             <label htmlFor="password">
-                                Password
+                                Password: 
                             </label>
                             <input
                                 type="password"
