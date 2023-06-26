@@ -38,8 +38,7 @@ const Signup = () => {
         <Nav/>    
         <section>
             <div>
-                <div>                  
-                    <h1> Signup </h1>                                                                            
+                <div>                                                                                            
                     <form>                                                                                            
                         <div>
                             <label htmlFor="email-address">
