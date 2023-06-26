@@ -36,9 +36,7 @@ const Login = () => {
             <main >    
             <Nav/>    
                 <section>
-                    <div>                                            
-                        <p> Login </p>                       
-                                                       
+                    <div>                                                                           
                         <form>                                              
                             <div>
                                 <label htmlFor="email-address">
