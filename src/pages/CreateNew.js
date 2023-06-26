@@ -1,75 +1,68 @@
 import React from "react"
 import Nav from "../Nav";
 import Footer from "../Footer";
+import Header from "../Header";
 
 function CreateNew(){
 
     return(
 
-	<div>
+        <div>
 
-        
-        <div className="banner">
-        <header className="text-center" role = "banner">
-            <h1><img className="image" src="images/mango.jpg" alt="Header image"/>Group 5's Mango Weekly Planner<img className="image" src="images/mango.jpg" alt="Header image"/></h1>
-            <p>This page should be tried in safari, chrome or Mozila.</p>
-        </header>
-    </div>
+            <Header/>
 
-    <div className="login">
-        <form action="index.html">
-            
-            <label htmlFor="email">E-mail: </label>
-            <input type="text" id="Email" name="email"/>
+            <div className="login">
+                <form action="index.html">
+                    
+                    <label htmlFor="email">E-mail: </label>
+                    <input type="text" id="Email" name="email"/>
 
-            <input type="submit" value="Login"/>
+                    <input type="submit" value="Login"/>
 
-        </form>
-    </div>
+                </form>
+            </div>
 
-    <Nav/>
+            <Nav/>
 
 
-    <article>
-        <section className="text-center form">
-            <h1>Create New Event</h1>
-            <form action="list.html" method="get">
-                <label htmlFor="name">Event Name:</label><br/>
-                <input type="text" id="name" name="name"/><br/>
+            <article>
+                <section className="text-center form">
+                    <h1>Create New Event</h1>
+                    <form action="list.html" method="get">
+                        <label htmlFor="name">Event Name:</label><br/>
+                        <input type="text" id="name" name="name"/><br/>
 
-                <label htmlFor="message">Event Description:</label><br/>
-                <textarea id="message" name="message" rows="3" cols="40"></textarea> <br/>
+                        <label htmlFor="message">Event Description:</label><br/>
+                        <textarea id="message" name="message" rows="3" cols="40"></textarea> <br/>
 
-                <label htmlFor="days">Select Day:</label><br/>
-                <select name="days" id="days">
-                    <option value="blank">Select Day:</option>
-                    <option value="Monday">Monday</option>
-                    <option value="Tuesday">Tuesday</option>
-                    <option value="Wednesday">Wednesday</option>
-                    <option value="Thursday">Thursday</option>
-                    <option value="Friday">Friday</option>
-                    <option value="Saturday">Saturday</option>
-                    <option value="Sunday">Sunday</option>
-                </select> <br/> 
+                        <label htmlFor="days">Select Day:</label><br/>
+                        <select name="days" id="days">
+                            <option value="blank">Select Day:</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select> <br/> 
 
-                <input type="checkbox" id="check" name="check" value="Check"/>
-                <label htmlFor="check">Mark as high priority</label><br/>
+                        <input type="checkbox" id="check" name="check" value="Check"/>
+                        <label htmlFor="check">Mark as high priority</label><br/>
 
-                <input type="submit" value="Add Event"/>
-            </form>
+                        <input type="submit" value="Add Event"/>
+                    </form>
 
-        </section>
-    </article>
+                </section>
+            </article>
 
-    <Footer/>
+            <Footer/>
 
-    </div>
+        </div>
     );
 
-        
-    
+          
 }
 
 
 export default CreateNew;
-
