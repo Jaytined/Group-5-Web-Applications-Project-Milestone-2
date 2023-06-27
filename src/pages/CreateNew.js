@@ -4,7 +4,7 @@ import NavLog from "../NavLog";
 import Footer from "../Footer";
 import Header from "../Header";
 
-function CreateNew(){
+const CreateNew = () => {
 
     return(
 

@@ -4,9 +4,10 @@ import NavLog from "../NavLog";
 import Footer from "../Footer";
 import Header from "../Header";
 import { useNavigate } from "react-router-dom";
+import {data} from '../data/data'
 
 
-function List(){
+const List = (props) => {
 
     const navigate = useNavigate();
     const navigating = () => {
@@ -41,9 +42,13 @@ function List(){
                     <div className="day">Wednesday</div>
 
                     <div className="event">
+                        {data.map((events,key)=>{
+                            // return <p key={key}>{events.time}<br/>{events.name}</p>;
+                        }
+                        )}
                         Wed. 2:00pm <br/>
                         Example Event 1<br/>
-                        <span>Event Description:</span> Info/details given about specific event <br/>
+                        <span>Event Description:</span> Info/details given about event <br/>
                         <span>Priority Event:</span> Yes <br/>
 
                         <button onClick={navigating}>View</button>
@@ -53,7 +58,7 @@ function List(){
                     <div className="event">
                         Wed. 3:00pm <br/>
                         Example Event 2<br/>
-                        <span>Event Description:</span> Info/details given about specific event <br/>
+                        <span>Event Description:</span> Info/details given about event <br/>
                         <span>Priority Event:</span> No <br/>
 
                         <button onClick={navigating}>View</button>
@@ -75,7 +80,7 @@ function List(){
                     <div className="event">
                         Sat. 11:00am <br/>
                         Example Event 3<br/>
-                        <span>Event Description:</span> Info/details given about specific event <br/>
+                        <span>Event Description:</span> Info/details given about event <br/>
                         <span>Priority Event:</span> No <br/>
 
                         <button onClick={navigating}>View</button>

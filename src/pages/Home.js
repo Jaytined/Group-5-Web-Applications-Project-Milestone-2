@@ -3,9 +3,11 @@ import Nav from "../Nav";
 import NavLog from "../NavLog";
 import Footer from "../Footer";
 import Header from "../Header";
+import List from "./List";
+import UseData from "../data/useData"
 
 
-function Home(){
+const Home = () => {
 
     return(
 
@@ -18,6 +20,7 @@ function Home(){
 			<Nav/>
 
 			<article  id="main-info">
+
 				<section className="description text-center home">
 					<h2>Welcome to Group 5's Weekly Planner!</h2>
 					<p>
