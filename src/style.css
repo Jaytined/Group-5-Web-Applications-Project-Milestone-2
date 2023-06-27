@@ -53,7 +53,7 @@ nav.heading ul.main{
     font-size: 18px;
 
     position: relative;
-    left: 115px;
+    left: 100px;
 
     top: 50px;
     animation-name: color-change;
@@ -118,6 +118,7 @@ section.function{
 
     padding: 25px;
     padding-left: 75px;
+    padding-top: 2px;
     grid-column: 1;
     grid-row: 2;
 
@@ -143,6 +144,7 @@ section.viewing{
     text-align: center;
     padding: 25px;
     padding-right: 75px;
+    padding-top: 2px;
     grid-column: 3;
     grid-row: 2;
 

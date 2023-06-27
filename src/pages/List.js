@@ -3,9 +3,15 @@ import Nav from "../Nav";
 import NavLog from "../NavLog";
 import Footer from "../Footer";
 import Header from "../Header";
+import { useNavigate } from "react-router-dom";
 
 
 function List(){
+
+    const navigate = useNavigate();
+    const navigating = () => {
+        navigate('/details');
+    }
 
     return(
 
@@ -40,7 +46,7 @@ function List(){
                         <span>Event Description:</span> Info/details given about specific event <br/>
                         <span>Priority Event:</span> Yes <br/>
 
-                        <button onclick="window.location.href = 'detail.html';">View</button>
+                        <button onClick={navigating}>View</button>
                         <button>Update</button>
                         <button>Delete</button>
                     </div>
@@ -50,7 +56,7 @@ function List(){
                         <span>Event Description:</span> Info/details given about specific event <br/>
                         <span>Priority Event:</span> No <br/>
 
-                        <button onclick="window.location.href = 'detail.html';">View</button>
+                        <button onClick={navigating}>View</button>
                         <button>Update</button>
                         <button>Delete</button>
                     </div>
@@ -72,7 +78,7 @@ function List(){
                         <span>Event Description:</span> Info/details given about specific event <br/>
                         <span>Priority Event:</span> No <br/>
 
-                        <button onclick="window.location.href = 'detail.html';">View</button>
+                        <button onClick={navigating}>View</button>
                         <button>Update</button>
                         <button>Delete</button>
                     </div>
