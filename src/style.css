@@ -15,6 +15,7 @@ body {
     background-image: url('mango-gradient.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-top: -22px;
 }
 
 
@@ -22,6 +23,11 @@ img.image{
     float:inline-start;
     width: 100px;
     height: 100px;
+    margin-top: auto;
+
+    position: relative;
+    top: 25px;
+    left: 1px;
 }
 
 @keyframes color-change {
@@ -34,6 +40,7 @@ img.image{
 
 nav.heading{
     padding-bottom: 15px;
+    margin-top: -15px;
 }
 nav.heading:hover > ul.main{
     animation: 0;
@@ -160,8 +167,8 @@ section.viewing{
     
 }
 section.viewing:hover {
-    transform: scale(1.15);
-    transition: transform 775ms;
+    transform: scale(1.08);
+    transition: transform 750ms;
 }
 
 section.form{
