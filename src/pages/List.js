@@ -42,8 +42,8 @@ const List = (props) => {
                     <div className="day">Wednesday</div>
 
                     <div className="event">
-                        {data.map((events,key)=>{
-                            // return <p key={key}>{events.time}<br/>{events.name}</p>;
+                        {data.map((events)=>{
+                            // return <p key={events.id}>{events.time}<br/>{events.name}</p>;
                         }
                         )}
                         Wed. 2:00pm <br/>
@@ -56,6 +56,10 @@ const List = (props) => {
                         <button>Delete</button>
                     </div>
                     <div className="event">
+                        {data.map((events)=>{
+                            // return <p key={events.id}>{events.time}<br/>{events.name}</p>;
+                        }
+                        )}
                         Wed. 3:00pm <br/>
                         Example Event 2<br/>
                         <span>Event Description:</span> Info/details given about event <br/>
@@ -78,6 +82,10 @@ const List = (props) => {
                     <div className="day">Saturday</div>
                     
                     <div className="event">
+                        {data.map((events)=>{
+                            // return <p key={events.id}>{events.time}<br/>{events.name}</p>;
+                        }
+                        )}
                         Sat. 11:00am <br/>
                         Example Event 3<br/>
                         <span>Event Description:</span> Info/details given about event <br/>

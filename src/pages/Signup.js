@@ -45,6 +45,7 @@ const Signup = () => {
                 <div>                                                                                            
                     <form>                                                                                            
                         <div>
+                            <h1>Sign-Up</h1>
                             <label htmlFor="email-address">
                                 Email address: 
                             </label>
