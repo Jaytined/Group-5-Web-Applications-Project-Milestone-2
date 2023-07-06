@@ -40,7 +40,7 @@ const Signup = () => {
         <Header/>
         <NavLog/>   
         <Nav/>      
-        <section class = "LogSign">
+        <section className = "LogSign">
             <div>
                 <div>                                                                                            
                     <form>                                                                                            
