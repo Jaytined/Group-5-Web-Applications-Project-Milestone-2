@@ -39,7 +39,7 @@ const Login = () => {
             <Header/>
 			<NavLog/>   
             <Nav/>    
-                <section class="LogSign">
+                <section className="LogSign">
                     <div>                                                                           
                         <form>                                              
                             <div>
