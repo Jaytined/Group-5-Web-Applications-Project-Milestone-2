@@ -7,6 +7,7 @@ import CreateNew from './pages/CreateNew';
 import Details from './pages/Details';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+import Logout from './Logout';
 
 
 import {BrowserRouter,Routes, Route} from "react-router-dom";
@@ -19,6 +20,7 @@ function App() {
       <Routes>                                                                       
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/logout" element={<Logout/>}/>
       </Routes>
 
       <Routes>
