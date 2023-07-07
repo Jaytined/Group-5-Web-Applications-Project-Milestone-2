@@ -8,7 +8,8 @@ function NavLog(){
 
 	<nav className="heading">
 	
-		<ul class="log"> <a href="/login">Login</a> </ul>
+		<ul className="log"> <a href="/logout">Logout</a></ul>
+	        <ul class="log"> <a href="/login">Login</a> </ul>
 		<ul class="log"> <a href="/signup">Signup</a> </ul>
 	
 		
