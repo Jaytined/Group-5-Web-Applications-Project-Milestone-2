@@ -13,6 +13,10 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    const navigating = () => {
+        navigate('/');
+    }
+
     // const {isLoggedSuccessfully, setLogin} = useState{false};
        
     const onLogin = (e) => {
@@ -72,11 +76,12 @@ const Login = () => {
                             </div>
                                                 
                             <div>
-                                <button                                    
-                                    onClick={onLogin}                                        
+                                <button onClick={navigating}>Login</button>
+                                {/* <button                                    
+                                    onClick={onLogin}                                       
                                 >      
                                     Login                                                                  
-                                </button>
+                                </button> */}
                             </div>                               
                         </form>
                        

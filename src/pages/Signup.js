@@ -13,6 +13,10 @@ const Signup = () => {
  
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('');
+
+    const navigating = () => {
+        navigate('/login');
+    }
  
     const onSubmit = async (e) => {
       e.preventDefault()
@@ -71,14 +75,14 @@ const Signup = () => {
                                 required                                 
                                 placeholder="Password"              
                             />
-                        </div>                                             
-                        
-                        <button
+                        </div>  
+                        <button onClick={navigating}>Sign up</button>                                           
+                        {/* <button
                             type="submit" 
                             onClick={onSubmit}                        
                         >  
                             Sign up                                
-                        </button>
+                        </button> */}
                                                                      
                     </form>
                    
