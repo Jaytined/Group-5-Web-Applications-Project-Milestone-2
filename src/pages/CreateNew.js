@@ -3,8 +3,15 @@ import Nav from "../Nav";
 import NavLog from "../NavLog";
 import Footer from "../Footer";
 import Header from "../Header";
+import { useNavigate } from "react-router-dom";
+
 
 const CreateNew = () => {
+
+    const navigate = useNavigate();
+    const navigating = () => {
+        navigate('/list');
+    }
 
     return(
 
@@ -42,7 +49,7 @@ const CreateNew = () => {
                         <input type="checkbox" id="check" name="check" value="Check"/>
                         <label htmlFor="check">Mark as high priority</label><br/>
 
-                        <input type="submit" value="Add Event"/>
+                        <button onClick={navigating}>Add Event</button>
                     </form>
 
                 </section>
