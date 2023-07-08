@@ -7,10 +7,10 @@ function Nav(){
     return(
 
 	<nav className="heading">
-		<ul class="main"> <a href="/">Home</a> </ul>
-		<ul class="main"> <a href="/createNew">New Event</a> </ul>
-		<ul class="main"> <a href="/list">Event Details</a> </ul>
-		<ul class="main"> <a href="/details">View Event Details</a> </ul>
+		<ul className="main"> <a href="/">Home</a> </ul>
+		<ul className="main"> <a href="/createNew">New Event</a> </ul>
+		<ul className="main"> <a href="/list">Event Details</a> </ul>
+		<ul className="main"> <a href="/details">View Event Details</a> </ul>
 	
 		{/* <ul class="log"> <a href="/login">Login</a> </ul>
 		<ul class="log"> <a href="/signup">Signup</a> </ul> */}
