@@ -10,8 +10,8 @@ function NavLog(){
 	
 		{/* <ul class="log"> <a href="/login">Login</a> </ul> */}
 		<ul className="log"> <a href="/logout">Logout</a></ul>
-	    <ul class="log"> <a href="/login">Login</a> </ul>
-		<ul class="log"> <a href="/signup">Signup</a> </ul>
+	        <ul className="log"> <a href="/login">Login</a> </ul>
+		<ul className="log"> <a href="/signup">Signup</a> </ul>
 	
 		
 		{/* <Link className = "links" to="/">Home </Link>
